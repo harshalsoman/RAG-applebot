@@ -1,6 +1,6 @@
 # Apple Financial Insights Chatbot
 
-Welcome to the Apple Financial Insights Chatbot! This project provides a real-time query-response chatbox that answers financial questions related to Apple based on SEC filings. The chatbot is powered by two models: Google Flan-T5 and Llama (via llama-cpp).
+Welcome to the Apple Financial Insights Chatbot! This project provides a real-time query-response chatbot that answers financial questions related to Apple based on SEC filings. The chatbot is powered by two models: Google Flan-T5 and Llama (via llama-cpp).
 
 ## Features
 
