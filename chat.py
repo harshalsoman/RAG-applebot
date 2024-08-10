@@ -10,7 +10,7 @@ CHUNKS_FILE = "saved_chunks.pkl"
 def run_chat():
     # Streamlit app
 
-    st.write("Currently only 1 model is supported. Adding more soon!")
+    st.write("Currently only 2 models are supported. Adding more soon!")
     # Model selection
     model_choice = st.selectbox("Choose a model:", ["Google T5","LLama3"])
 
