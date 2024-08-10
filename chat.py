@@ -2,7 +2,7 @@ import streamlit as st
 
 from google_t5_model import load_google_t5_model, implement_rag as implement_rag_t5, retrieve as retrieve_t5, \
     generate_response as generate_response_t5
-# from llama import load_llama_model, generate_response as generate_response_llama
+from llama import load_llama_model, generate_response as generate_response_llama
 from data_processing import download_sec_filings, preprocess_filing, save_chunks,load_chunks
 import os
 CHUNKS_FILE = "saved_chunks.pkl"
@@ -12,7 +12,7 @@ def run_chat():
 
     st.write("Currently only 1 model is supported. Adding more soon!")
     # Model selection
-    model_choice = st.selectbox("Choose a model:", ["Google T5"])
+    model_choice = st.selectbox("Choose a model:", ["Google T5","LLama3"])
 
     @st.cache_resource
     def load_model_and_rag(model_choice):
